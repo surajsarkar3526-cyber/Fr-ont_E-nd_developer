@@ -1,0 +1,24 @@
+let arr = [85,97,44,37,76,60];
+let sum = 0;
+let avg;
+for(let i of arr){
+    sum += i;
+}
+avg = sum / arr.length;
+console.log("Arrays ka Avg : "+avg);
+console.log(arr.pop());
+console.log(arr.push(78));
+console.log(arr.push(arr.pop()));
+console.log(arr);
+
+let array = ['samaya','gauri','samantha','sanaya'];
+
+
+arr = arr.concat(array)
+
+console.log(arr)
+console.log(arr.slice(0,))
+
+console.log(arr.splice(3, 7,3))
+
+console.log(arr)
