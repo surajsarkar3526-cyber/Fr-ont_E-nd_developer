@@ -1,0 +1,52 @@
+console.log("Hello, World!");
+const arrowSum = (a,b) =>{
+    return a+b;
+}
+console.log(arrowSum(76,1))
+
+const arrowMul = (a,b) =>{
+    return a*b;
+}
+console.log(arrowMul(8,9))
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+function CountString(str) {
+    let count = 0;
+
+    for (const i of str) {
+        count++;
+        console.log(i);
+    }
+
+    console.log("\nTotal Count Letter : " + count);
+}
+
+rl.question("Enter Your String : ", (input) => {
+    CountString(input);
+    rl.close();
+});
+
+console.log("\n")
+let number = [1,2,53,64,234,64.7,75,22]
+number.forEach(function printVal(val){
+    console.log(val)
+})
+
+console.log("\n\n");
+
+let arr = ['Physics','English','Hindi','Maths','Chemistry','Media']
+
+arr.forEach(function printVal(val){
+    console.log(val)
+})
+
+console.log("\n\nForEach With arrowFunction ")
+number.forEach(val =>{
+    console.log(val)
+})
